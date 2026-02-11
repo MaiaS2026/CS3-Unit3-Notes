@@ -18,6 +18,25 @@
 
     {% endif %}
 
+    {% if year == 2026 %}
+    <p>OMG Im graduating this year!</p>
+    {% endif %}
+
+    <hr>
+
+    <ul>
+    {% for item in favorites %}
+    <li> {{ item }} </li>
+    {% endfor %}
+    </ul>
+
+    <dl>
+        {% for key, val in ratings.items() %}
+            <dt> {{ key }} </dt>
+            <dd> {{ val }} </dd>
+        {% endfor %}
+    </dl>
+
 
 
 </body>
