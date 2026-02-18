@@ -8,6 +8,13 @@
 
 <body>
 
+    <div class="'navbar">
+        <a href=" {{ url_for('index') }} " class="navbar-brand"> Home </a>
+        <a href="#" class=navbar-items"> About </a>
+        <a href="#" class ="navbar-items"> Contact </a>
+    </div>
+
+    <div class="'page-content"> 
     <h1>My First Flask App!</h1>
 
     {% if name %}
@@ -31,13 +38,18 @@
     </ul>
 
     <dl>
+        <h2>Iced Drinks Commentary:</h2>
         {% for key, val in ratings.items() %}
             <dt> {{ key }} </dt>
             <dd> {{ val }} </dd>
         {% endfor %}
     </dl>
 
+</div>
 
+<footer>
+    <p>Coded by Maia &copy; 2026</p>
+</footer>
 
 </body>
 

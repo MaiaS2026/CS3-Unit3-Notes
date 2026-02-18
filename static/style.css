@@ -1,11 +1,18 @@
+/* CSS VARIABLES! For color palettes and consistency */
+:root {
+    --accent: #e750a8;
+    --accent-lt: #ffa7da;
+    --accent-dk: #ed269a;
+}
+
 body {
-    background: pink;
-    color: grey;
+    background: var(--accent-lt);
+    color: var(--accent-dk);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: hotpink;
+    color: var(--acent);
     font-style: italic;
     font-family: impact;
     text-align: center;
@@ -17,4 +24,25 @@ p {
     padding: 10px;
     border: 5px double hotpink;
     text-shadow: 2px 2px 0px white;
+}
+
+ul, dl {
+    border: 2px solid var(--accent-dk);
+    padding: 20px;
+}
+
+dt {
+    background: white;
+    color: hotpink;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+footer {
+    background: var(--accent-dk);
+    color: hotpink;
+    text-align: center;
+    font-size: 0.8rem;
 }
